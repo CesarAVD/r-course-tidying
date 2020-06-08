@@ -1,8 +1,4 @@
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 For an explanation of how the data was constructed, read README.md.
 
 ## Subject
@@ -18,23 +14,16 @@ Using the phone's embedded accelerometer and gyroscope, 3-axial linear accelerat
 
 The meassurements here presented are only the means and standard deviations of the original data sets. Variable names were changed to be more descriptive, by making them a collection of labels. Explanations to these labels are below.
 
-```````{r echo = FALSE, results = "asis"}
-library(knitr)
-
-tokens <- data.frame(1,1)
-names(tokens) <- c("Label, by order of appearance","Explanation")
-tokens[1,] <- c("average of","Meassurement is the average of all relevant meassurements in that experiment. For a data set, the arithmetic mean, also called the expected value or average, is the central value of a discrete set of numbers: specifically, the sum of the values divided by the number of values.")
-tokens[2,] <- c("standard deviation of","Meassurement is the standard deviation of all relevant meassurements in that experiment. The standard deviation is a measure of the amount of variation or dispersion of a set of values.")
-tokens[3,] <- c("body","Signal based on the body of the participant, the first of the meassurement components derived from the accelerometer.")
-tokens[4,] <- c("gravity","Signal caused by gravity, the second of the meassurement components derived from the accelerometer. Gravity is a fundamental force that attracts two bodies with mass together.")
-tokens[5,] <- c("accelerometer","Signal read from the accelerometer.")
-tokens[6,] <- c("gyroscope","Signal read from the gyroscope.")
-tokens[7,] <- c("jerk","Jerk signals, from body linear acceleration and angular velocity derived in time.")
-tokens[8,] <- c("magnitude","Magnitude of the signal, as calculated using the Euclidean norm.")
-tokens[9,] <- c("time","Meassurement is a time-based signal.")
-tokens[10,] <- c("frequency","Meassurement on the frequency domain, Fast Fourier Transform of time-based signals.")
-tokens[11,] <- c("in X/Y/Z","Meassurement corresponds only to that axis.")
-
-kable(tokens, caption = "Variable label explanations")
-
-````````
+| Label, by order of appearance  | Explanation |
+| ------------- | ------------- |
+| average of  | Meassurement is the average of all relevant meassurements in that experiment. For a data set, the arithmetic mean, also called the expected value or average, is the central value of a discrete set of numbers: specifically, the sum of the values divided by the number of values.  |
+| standard deviation of  | Meassurement is the standard deviation of all relevant meassurements in that experiment. The standard deviation is a measure of the amount of variation or dispersion of a set of values.  |
+| body  | Signal based on the body of the participant, the first of the meassurement components derived from the accelerometer.  |
+| gravity  | Signal caused by gravity, the second of the meassurement components derived from the accelerometer. Gravity is a fundamental force that attracts two bodies with mass together.  |
+| accelerometer  | Signal read from the accelerometer.  |
+| gyroscope  | Signal read from the gyroscope.  |
+| jerk  | Jerk signals, from body linear acceleration and angular velocity derived in time.  |
+| magnitude  | Magnitude of the signal, as calculated using the Euclidean norm.  |
+| time  | Meassurement is a time-based signal.  |
+| frequency  | Meassurement on the frequency domain, Fast Fourier Transform of time-based signals.  |
+| in X/Y/Z  | Meassurement corresponds only to that axis.  |
