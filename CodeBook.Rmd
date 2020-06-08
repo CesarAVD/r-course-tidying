@@ -9,6 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+For an explanation of how the data was constructed, read README.md.
+
 ## Subject
 Numerical value from 1 to 30, represents the individual (all within an age bracket of 19-48 years) who performed a series of tasks wearing a smartphone (Samsung Galaxy S II) on the waist.
 
