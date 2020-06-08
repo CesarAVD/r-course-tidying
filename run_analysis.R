@@ -86,7 +86,7 @@ for (i in 3:68){
         names(filteredSet)[i] <- newname
 }
 
-write.csv(filteredSet,"./SamsungData/tidy.csv", row.names = FALSE)
+write.table(filteredSet,"./SamsungData/tidy.txt", row.names = FALSE)
 
 #creates a second, independent tidy data set with the average of each variable for 
 #each activity and each subject.
@@ -108,4 +108,4 @@ for (i in 1:30){
 } 
 
 names(tidyAverages) <- names(filteredSet)
-write.csv(tidyAverages,"./SamsungData/tidyAverages.csv", row.names = FALSE)
+write.table(tidyAverages,"./SamsungData/tidyAverages.txt", row.names = FALSE)
